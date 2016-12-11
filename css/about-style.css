@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@font-face {
+	font-family: 'viper squadron';
+	src: url(VIPESSRG.TTF);
+}
+
+/* universal styles */
+*,
+*:before,
+*:after {
+	margin:0px;
+	padding: 0px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hide{
+	display: none;
+}
+
+.clearfix:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+
+/* Global Styles */
+
+ul li{
+	list-style-type: none;
+}
+
+ul li a{
+	text-decoration: none;
+}
+
+img {
+	border:0px;
+	max-width: 100%;
+	height: auto;
+}
+
+.hide{
+	display: none;
+
+}
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+/* Page Styles */
+
+.box {
+	background: rgba(206,222,242,1);
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	align-content: center;
+}
+
+.centerme{
+	margin: auto;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+.container-top {
+	width: 940px;
+	height: 600px;
+	margin: 0 auto;
+}
+/*.container figure{
+	max-width: 10;
+	width: auto;
+	margin: 0 auto;
+}*/
+
+.home {
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(129,141,166,1);
+	color: rgba(9,7,13,1);
+	font-size: 14px;
+
+}
+
+.home h1{
+	font-size: 32px;
+	font-family: 'viper squadron', sans-serif;
+	color: rgba(240,242,242,1);
+	text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+	text-transform: uppercase;
+	margin: 5px;
+}
+}
+
+.home h2{
+	font-size: 18px;
+	font-family: 'viper squadron', sans-serif;
+	font-weight: bold;
+	color: rgba(235,159,62,1);
+	text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+	text-transform: uppercase;
+	margin: 25px 0;
+}
+
+.home h3{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.home a {
+	color: rgba(240,242,242,1);
+}
+
+.home a:hover {
+	color: rgba(102,104,109,1);
+}
+
+.home p{
+	margin-bottom: 25px;
+	line-height: 1.45em;
+}
+
+/*Top Section*/
+
+.bg-top{
+	background-color:rgba(0,0,0,1); 
+	background-size: cover;
+	padding-bottom: 10px;
+}
+
+/*.bg-top{
+	background: url('../img/portfolio/IMG_9413.jpg') center center no-repeat;
+	/*background-size: cover;
+	padding-bottom: 10px;
+}
+*/
+/*NAVIGATION*/
+
+/*.box ul{
+	background: rgba(8,10,13,.3);
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}*/
+
+.box-nav {
+	background: rgba(8,10,13,.3);
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+nav {
+	/*font-family: 'viper-squadron', sans-serif;*/
+	font-family: 'viper squadron', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+nav a{
+	font-size: 25px;
+	color: rgba(240,242,242,1);
+	text-transform: uppercase;
+}
+
+nav ul li {
+	float: left;  /*change this for mediaquery*/
+	margin-left: 0px;
+	margin-right: 80px;
+}
+
+/*nav ul li:last-child {
+	margin-left: 140px;
+	margin-right: auto;
+}*/
+
+/*Middle Section*/
+
+.bg-middle {
+	background: rgba(129,141,166,1);
+	padding-top: 10px;
+	font-size: 13px;
+}
+
+.container-middle{
+	max-width: 960px;
+}
+
+.middle ul li{
+	float: left;
+	width: 320px;
+	height: 320px;
+	
+}
+
+.middle ul li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+img.thumb {
+	width: 320px;
+	height: 320px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*Footer */
+
+.bg-footer {
+	background: rgba(0,0,0,1);
+	color: rgba(240,242,242,1);
+	height: 50px;
+	width:auto;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+/* mobile style */
+			@media only screen and (max-width: 800px){
+			
+				.container{
+					max-width: 500px;
+				}
+
+				h1{
+					padding-left: 0px;
+				}
+
+				nav{
+					height: 100%;
+					padding-top: 0;
+				}
+
+				nav a{
+					display: block;
+				}
+				
+				nav ul li {
+				float: none;  /*change this for mediaquery*/
+				margin-left: 0px;
+				margin-right: 80px;
+				}
+
+				img{
+					max-width: 100%;
+				}
+
+				
+
+			}
+
+
+		@media only screen and (max-width: 485px){
+			
+			.container{
+				max-width: 300px;
+			}
+
+			h1{
+				padding-left: 0px;
+			}
+
+			nav{
+				height: 100%;
+				padding-top: 0;
+			}
+
+			nav a{
+				display: block;
+			}
+
+			nav ul li {
+				float: none;  /*change this for mediaquery*/
+				margin-left: 0px;
+				margin-right: 80px;
+			}
+
+
+			img{
+				max-width: 100%;
+			}
+
+			
+
+			}/*end mobile style*/
